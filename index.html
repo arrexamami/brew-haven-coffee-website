@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brew Haven — Premium Coffee, Handcrafted Daily</title>
+<meta name="description" content="Brew Haven Coffee Co. — handcrafted coffee made from sustainably sourced beans, roasted and brewed to perfection." />
+<meta property="og:title" content="Brew Haven — Premium Coffee, Handcrafted Daily" />
+<meta property="og:description" content="Handcrafted coffee made from the finest beans, brewed to perfection for you." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12h15a3 3 0 0 1 0 6h-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M6 12v7a4 4 0 0 0 4 4h5a4 4 0 0 0 4-4v-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M9 6c0 1.2 1.4 1.2 1.4 2.4S9 9.6 9 10.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M14 5c0 1.2 1.4 1.2 1.4 2.4S14 8.6 14 9.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">
+        <span class="logo-title">Brew Haven</span>
+        <span class="logo-sub">Coffee Co.</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" aria-label="Open shopping cart">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="21" r="1.4" fill="currentColor"/>
+          <circle cx="18" cy="21" r="1.4" fill="currentColor"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#story">Our Story</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Rich. Smooth. Perfect.</p>
+      <h1 class="hero-heading">
+        Experience<br>
+        Coffee Like<br>
+        <span class="accent">Never Before</span>
+      </h1>
+      <p class="hero-sub">Handcrafted coffee made from the finest beans, brewed to perfection for you.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore Menu <span aria-hidden="true">→</span></a>
+        <a href="#story" class="btn btn-outline">Our Story <span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="hero-features">
+        <li><span class="hf-icon" aria-hidden="true">🫘</span> Premium Quality Beans</li>
+        <li><span class="hf-icon" aria-hidden="true">🔥</span> Expertly Roasted</li>
+        <li><span class="hf-icon" aria-hidden="true">❤</span> Made With Love</li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal" style="--delay:120ms">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1000&auto=format&fit=crop" alt="Latte art coffee cup with steam rising, resting on a bed of roasted coffee beans" class="hero-cup" width="600" height="700" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=1000&auto=format&fit=crop" alt="Bag of Brew Haven premium coffee blend on a wooden counter inside the coffee shop" width="560" height="640" loading="lazy">
+    </div>
+    <div class="about-copy reveal" style="--delay:120ms">
+      <p class="eyebrow">About Us</p>
+      <h2 class="section-heading">More Than Just<br>a <span class="accent">Coffee</span></h2>
+      <p class="about-text">At Brew Haven, we believe coffee is more than a drink — it's an experience. Every cup we serve is a blend of passion, quality, and perfection.</p>
+      <ul class="about-list">
+        <li><span class="check" aria-hidden="true">✓</span> Sustainably Sourced Beans</li>
+        <li><span class="check" aria-hidden="true">✓</span> Ethically Traded</li>
+        <li><span class="check" aria-hidden="true">✓</span> Freshly Roasted</li>
+        <li><span class="check" aria-hidden="true">✓</span> Barista Crafted</li>
+      </ul>
+      <a href="#story" class="btn btn-primary">Learn More <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POPULAR PRODUCTS ================= -->
+<section class="popular" id="popular">
+  <div class="popular-head reveal">
+    <p class="eyebrow center">Our Signature</p>
+    <h2 class="section-heading center">Popular Picks</h2>
+  </div>
+
+  <div class="carousel-wrap reveal" style="--delay:100ms">
+    <button class="car-btn car-prev" id="carPrev" aria-label="Previous products">‹</button>
+    <div class="carousel" id="popularCarousel" role="list"></div>
+    <button class="car-btn car-next" id="carNext" aria-label="Next products">›</button>
+  </div>
+
+  <div class="view-menu-wrap reveal">
+    <a href="#menu" class="btn btn-ghost">View Full Menu <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- ================= FEATURE STRIP ================= -->
+<section class="feature-strip reveal" aria-label="Store benefits">
+  <div class="fs-inner">
+    <div class="fs-item">
+      <span class="fs-icon" aria-hidden="true">🚚</span>
+      <div><strong>Free Delivery</strong><span>On orders above ₹249</span></div>
+    </div>
+    <div class="fs-item">
+      <span class="fs-icon" aria-hidden="true">⏱</span>
+      <div><strong>Fresh &amp; Fast</strong><span>Prepared with care</span></div>
+    </div>
+    <div class="fs-item">
+      <span class="fs-icon" aria-hidden="true">🔒</span>
+      <div><strong>Secure Payment</strong><span>100% safe &amp; secure</span></div>
+    </div>
+    <div class="fs-item">
+      <span class="fs-icon" aria-hidden="true">★</span>
+      <div><strong>Loyalty Rewards</strong><span>Earn points every order</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR STORY ================= -->
+<section class="story" id="story">
+  <div class="story-inner reveal">
+    <p class="eyebrow center">Our Story</p>
+    <h2 class="section-heading center">From Farm to Cup</h2>
+    <p class="story-text">Brew Haven began with a simple idea: coffee should be unrushed. We work directly with small farms, roast in small batches, and pour every cup by hand — because the extra care is the point, not a step to skip.</p>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="menu-section" id="menu">
+  <div class="menu-head reveal">
+    <p class="eyebrow center">Full Menu</p>
+    <h2 class="section-heading center">Find Your Cup</h2>
+  </div>
+
+  <div class="menu-controls reveal">
+    <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+    <div class="menu-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" id="menuSearch" placeholder="Search the menu…" aria-label="Search the menu">
+    </div>
+  </div>
+
+  <div class="menu-grid" id="menuGrid" role="list"></div>
+  <p class="menu-empty" id="menuEmpty" hidden>No items match your search. Try another term or category.</p>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <h3>Stay in the Loop</h3>
+      <p>Subscribe to get special offers, coffee tips and updates from Brew Haven.</p>
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <label for="newsletterEmail" class="sr-only">Email address</label>
+        <div class="newsletter-input">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" autocomplete="email">
+          <button type="submit" aria-label="Subscribe"><span aria-hidden="true">→</span></button>
+        </div>
+        <p class="newsletter-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+      </form>
+      <div class="social-row">
+        <span class="social-label">Follow Us</span>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Customer Care</h4>
+      <a href="#">FAQs</a>
+      <a href="#">Shipping &amp; Delivery</a>
+      <a href="#">Returns &amp; Refunds</a>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p class="contact-line">📞 +91 98765 43210</p>
+      <p class="contact-line">✉ hello@brewhaven.com</p>
+      <p class="contact-line">📍 123 Coffee Lane, Brew City, India – 560001</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Brew Haven Coffee Co. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-backdrop" id="cartBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h2 id="cartTitle">Your Cart</h2>
+    <button id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmptyState">
+    <span aria-hidden="true">☕</span>
+    <p>Your cart is empty.</p>
+    <p class="cart-empty-sub">Add a coffee from the menu to get started.</p>
+  </div>
+  <div class="cart-footer" id="cartFooter">
+    <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+    <div class="cart-row cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
